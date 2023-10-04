@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHATTERBOX APPLICATION</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"
+        integrity="sha512-Xm9qbB6Pu06k3PUwPj785dyTl6oHxgsv9nHp7ej7nCpAqGZT3OZpsELuCYX05DdonFpTlBpXMOxjavIAIUwr0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="app.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+</head>
+<body>
+    <h1>Welcome to Chatterbox</h1>
+    <!-- Add this input field to your form -->
+<input type="email" id="recipient-email" placeholder="Please Enter Your Email" required />
+
+    <form id="auth-form">
+        <label form="username"></label>
+        <input type="text" id="username" placeholder="Enter Your Username..." name="username" required>
+        <button type="submit">Authenticate</button>
+    </form>
+    <form id="message-form"> 
+        <input type="text" id="message-input" placeholder="Your message">
+        <button id="send-button">Send</button> 
+    </form>
+    <ul></ul>
+    <p class="activity"></p>
+</body>
+
+</html>
